@@ -50,17 +50,18 @@ Target Variable:
 
 ## 🏗️ System Architecture
 
+## 🏗️ System Architecture
+
 ```mermaid
 flowchart TD
-    A[IoT Sensors<br>Temperature, Torque, RPM, Pressure] --> B[Data Acquisition Layer]
-    B --> C[Data Storage<br>CSV Files / Industrial Logs]
-    C --> D[Data Preprocessing<br>Cleaning, Encoding, Scaling]
-    D --> E[Feature Engineering<br>Selection & Transformation]
-    E --> F[Machine Learning Model<br>Random Forest Classifier]
+    A[IoT Sensors] --> B[Data Collection]
+    B --> C[Data Storage]
+    C --> D[Data Preprocessing]
+    D --> E[Feature Engineering]
+    E --> F[Machine Learning Model]
     F --> G[Failure Prediction]
-    G --> H[Visualization & Reporting<br>Confusion Matrix, Metrics]
-    H --> I[Decision Support System]
-    I --> J[Predictive Maintenance Alerts] ```
+    G --> H[Visualization]
+    H --> I[Maintenance Decision]
 
 ---
 
