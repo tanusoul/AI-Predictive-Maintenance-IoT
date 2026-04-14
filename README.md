@@ -67,8 +67,6 @@ Visualization Dashboard
 ↓
 Maintenance Decision & Alerts
 
----
-
 ## 📂 Project Structure
 AI-Predictive-Maintenance-IoT/
 │
