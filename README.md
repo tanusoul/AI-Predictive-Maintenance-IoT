@@ -48,10 +48,19 @@ It includes simulated IoT sensor data such as:
 Target Variable:
 - **Machine Failure (0 = No Failure, 1 = Failure)**
 
-## 🏗️ Project Architecture
-IoT Sensors → Data Collection → Data Preprocessing →
-Feature Engineering → Machine Learning Model →
-Failure Prediction → Visualization → Maintenance Decision
+## 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+    A[IoT Sensors<br>Temperature, Torque, RPM, Pressure] --> B[Data Acquisition Layer]
+    B --> C[Data Storage<br>CSV Files / Industrial Logs]
+    C --> D[Data Preprocessing<br>Cleaning, Encoding, Scaling]
+    D --> E[Feature Engineering<br>Selection & Transformation]
+    E --> F[Machine Learning Model<br>Random Forest Classifier]
+    F --> G[Failure Prediction]
+    G --> H[Visualization & Reporting<br>Confusion Matrix, Metrics]
+    H --> I[Decision Support System]
+    I --> J[Predictive Maintenance Alerts] ```
 
 ---
 
@@ -81,57 +90,3 @@ AI-Predictive-Maintenance-IoT/
 └── .gitignore
 
 ---
-
-## ⚙️ Installation and Setup
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/tanusoul/AI-Predictive-Maintenance-IoT.git
-cd AI-Predictive-Maintenance-IoT
-2️⃣ Create a Virtual Environment
-python -m venv venv
-venv\Scripts\activate
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-4️⃣ Run the Project
-python main.py
-📈 Model Performance
-
-The Random Forest model achieves high accuracy in predicting machine failures using simulated IoT sensor data.
-
-Evaluation Metrics:
-
-Accuracy
-Precision
-Recall
-F1-Score
-Confusion Matrix
-
-🔮 Future Enhancements
-Real-time IoT data integration using MQTT
-Deployment with Streamlit or Flask
-Deep Learning models such as LSTM
-Cloud deployment using AWS or Azure
-Integration with Power BI dashboards
-Edge AI deployment for smart factories
-🎓 Learning Outcomes
-Predictive Maintenance using Artificial Intelligence
-Industrial IoT Analytics
-End-to-End Machine Learning Pipeline
-Data Preprocessing and Feature Engineering
-Model Evaluation and Visualization
-Version Control with Git and GitHub
-👩‍💻 Author
-
-Tanuja
-B.Tech in Computer Science Engineering (AI & ML)
-
-📜 License
-
-This project is intended for educational and portfolio purposes.
-
-⭐ Acknowledgements
-UCI Machine Learning Repository
-AI4I Predictive Maintenance Dataset
-Scikit-learn Documentation
-Open-source AI community
