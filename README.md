@@ -49,47 +49,41 @@ Target Variable:
 - **Machine Failure (0 = No Failure, 1 = Failure)**
 
 ## 🏗️ System Architecture
-IoT Sensors
-↓
-Data Collection
-↓
-Data Storage
-↓
-Data Preprocessing
-↓
-Feature Engineering
-↓
-Machine Learning Model
-↓
-Failure Prediction
-↓
-Visualization Dashboard
-↓
-Maintenance Decision & Alerts
 
-## 📂 Project Structure
+1. **IoT Sensors**
+2. **Data Collection**
+3. **Data Storage**
+4. **Data Preprocessing**
+5. **Feature Engineering**
+6. **Machine Learning Model**
+7. **Failure Prediction**
+8. **Visualization Dashboard**
+9. **Maintenance Decision & Alerts**
+
+---
+
+## 📁 Project Structure
+
+```text
 AI-Predictive-Maintenance-IoT/
-│
 ├── data/
-│ └── raw/
+│   └── raw/
 ├── docs/
 ├── images/
-│ └── confusion_matrix.png
+│   └── confusion_matrix.png
 ├── models/
-│ └── predictive_maintenance_model.pkl
+│   └── predictive_maintenance_model.pkl
 ├── notebooks/
 ├── outputs/
-│ └── predictions.csv
+│   └── predictions.csv
 ├── src/
-│ ├── data_preprocessing.py
-│ ├── train_model.py
-│ ├── evaluate_model.py
-│ ├── predict.py
-│ └── visualize.py
-│
+│   ├── data_preprocessing.py
+│   ├── train_model.py
+│   ├── evaluate_model.py
+│   ├── predict.py
+│   └── visualize.py
 ├── main.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 
----
