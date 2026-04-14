@@ -49,19 +49,23 @@ Target Variable:
 - **Machine Failure (0 = No Failure, 1 = Failure)**
 
 ## 🏗️ System Architecture
-
-## 🏗️ System Architecture
-
-```mermaid
-flowchart TD
-    A[IoT Sensors] --> B[Data Collection]
-    B --> C[Data Storage]
-    C --> D[Data Preprocessing]
-    D --> E[Feature Engineering]
-    E --> F[Machine Learning Model]
-    F --> G[Failure Prediction]
-    G --> H[Visualization]
-    H --> I[Maintenance Decision]
+IoT Sensors
+↓
+Data Collection
+↓
+Data Storage
+↓
+Data Preprocessing
+↓
+Feature Engineering
+↓
+Machine Learning Model
+↓
+Failure Prediction
+↓
+Visualization Dashboard
+↓
+Maintenance Decision & Alerts
 
 ---
 
